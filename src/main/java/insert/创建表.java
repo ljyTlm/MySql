@@ -18,4 +18,5 @@ public class 创建表 {
         )
         AUTO_INCREMENT指定自动增长 默认从1开始
 
+        复制表结构：create table [表名] like [表名]
 */
