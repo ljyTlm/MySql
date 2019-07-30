@@ -40,4 +40,22 @@ public class Keyword {
  *      那对上就正常显示，不能对上就是为null
  *      select * from tbl1 as t1 right join tbl2 as t2 on .....
  *
+ *  9. order by
+ *      指定以什么什么排序
+ *      select * from tab order by one desc asc
+ *
+ *  10.distinct
+ *      去重
+ *      select count(distinct name) from tab
+ *
+ *  11. not in
+ *      翻译过来就是不在什么什么之中
+ *      select name from tab where name not in (select )
+ *
+ *  12. not null
+ *      不为null
+ *      select name from tab where name not null
+ *
+ *  13. not exists
+ *
  **/

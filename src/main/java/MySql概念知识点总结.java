@@ -1,3 +1,9 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class MySql概念知识点总结 {
     public static void main(String[] args) {
 
@@ -12,10 +18,12 @@ public class MySql概念知识点总结 {
         （2）索引
             索引是数据库中对表的列或多个列的值进行排序的数据结构
             底层使用的是B+树（n叉树）特点就是节点包含父节点
-            1.主键索引
-            2.唯一索引
-            3.聚集索引
-            4.非聚集索引
+            聚集索引
+                1.主键索引
+            非聚集索引
+                2.唯一索引
+                3.复合索引
+                4.单一索引
             优点：加快查找速度
             缺点：需要动态维护
         （3）事务
@@ -33,9 +41,9 @@ public class MySql概念知识点总结 {
                 3.不可重复读 因为修改两次读取数据的值不一样
                 3.更新覆盖 顾名思义
             6.隔离级别
-                1.读 未提交
-                2.读 已提交
-                3.读 不可见
+                1.读 未提交 脏读
+                2.读 已提交 不可重复读
+                3.读 不可见 幻读
                 4.序列化 只允许事务串行运行
     2.数据库原理
         锁广义上两类：
