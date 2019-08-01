@@ -58,4 +58,16 @@ public class Keyword {
  *
  *  13. not exists
  *
+ *  14. explain
+ *      显示mysql执行select查询语句时所用到的信息
+ *      以一张表的形式返回，其中有一个重要的参数
+ *      select-type 查询类型
+ *      type 扫描类型 最差的是all 最好的是 const
+ *      table 表名
+ *      possible-key 可能用到的索引
+ *      key 在查询过程真正用到的索引
+ *      key-len 索引长度 越小越好
+ *
+ *
+ *
  **/
